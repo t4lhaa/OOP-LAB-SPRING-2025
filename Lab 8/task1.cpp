@@ -49,9 +49,12 @@ public:
 ostream &operator<<(ostream &os, Complex &o)
 {
     os << "The Complex Number is: " << o.realPart;
-    if (o.imaginaryPart >= 0) {
+    if (o.imaginaryPart >= 0)
+    {
         os << " + " << o.imaginaryPart << "i";
-    } else {
+    }
+    else
+    {
         os << " - " << -o.imaginaryPart << "i";
     }
     os << endl;
@@ -83,9 +86,9 @@ int main()
     Complex div = num1 / num2;
     cout << div;
 
-    cout << "The magnitude of num1 is: " << magnitude(&num1) << " " << endl;
+    cout << "The magnitude of num1 is: " << magnitude(&num1) << endl;
     ;
-    cout << "The magnitude of num2 is: " << magnitude(&num2) << " " << endl;
+    cout << "The magnitude of num2 is: " << magnitude(&num2) << endl;
     ;
 
     return 0;
