@@ -7,6 +7,6 @@ class LectureCourse : public Course
 public:
     LectureCourse(string courseCode, int credits);
 
-    void calculateGrade() override;
+    void calculateGrade(string grade) override;
     void displayInfo() override;
 };
