@@ -12,7 +12,7 @@ public:
     {
     }
     virtual void displayTreatment() = 0;
-    virtual void calculateCost() = 0;
+    virtual void calculateCost(double amount) = 0;
 };
 class inPatient : public Patient
 {
@@ -23,10 +23,11 @@ public:
     void displayTreatment()
     {
         cout << "InPatient Name: " << name << endl;
+        cout << "Room Charges";
     }
-    void calculateCost()
+    void calculateCost(double amount)
     {
-        cout << "Cost: RS 10000" << endl;
+        cout << "Cost: RS " << amount << endl;
     }
 };
 class outPatient : public Patient
@@ -38,10 +39,11 @@ public:
     void displayTreatment()
     {
         cout << "OutPatient Name: " << name << endl;
+        cout << "Consultation Fees";
     }
-    void calculateCost()
+    void calculateCost(double amount)
     {
-        cout << "Cost: RS 15000" << endl;
+        cout << "Cost: RS " << amount << endl;
     }
 };
 int main()
@@ -51,9 +53,9 @@ int main()
     Patient *p1;
     p1 = &inpatient1;
     p1->displayTreatment();
-    p1->calculateCost();
+    p1->calculateCost(10000);
 
     p1 = &outpatient1;
     p1->displayTreatment();
-    p1->calculateCost();
+    p1->calculateCost(2000);
 }
