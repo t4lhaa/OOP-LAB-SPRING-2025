@@ -13,6 +13,6 @@ protected:
 public:
     Course(string courseCode, int credits) : courseCode(courseCode), credits(credits) {}
 
-    virtual void calculateGrade() = 0;
+    virtual void calculateGrade(string grade) = 0;
     virtual void displayInfo() = 0;
 };
