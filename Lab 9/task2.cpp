@@ -26,7 +26,7 @@ public:
     }
     void prepare()
     {
-        cout << "Appetizer " << dishName << " is preparing!!!" << endl;
+        cout << dishName << " is preparing!!!" << endl;
     }
 };
 class Maincourse : public MenuItem
@@ -42,7 +42,7 @@ public:
     }
     void prepare()
     {
-        cout << "main " << dishName << " is preparing!!!" << endl;
+        cout << dishName << " is preparing!!!" << endl;
     }
 };
 int main()
