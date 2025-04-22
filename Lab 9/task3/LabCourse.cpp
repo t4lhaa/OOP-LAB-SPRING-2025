@@ -9,7 +9,7 @@ void LabCourse::displayInfo()
     cout << "Lab Course: " << courseCode << " | Credits: " << credits << endl;
 }
 
-void LabCourse::calculateGrade()
+void LabCourse::calculateGrade(string grade)
 {
-    cout << "Final Grade of Lab:80 " << endl;
+    cout << "Grade : " << grade << endl;
 }
