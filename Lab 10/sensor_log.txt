@@ -1,0 +1,2 @@
+Sensor1: 23.5C
+Sensor2: 98.1C
